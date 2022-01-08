@@ -1,0 +1,24 @@
+{
+  "name": "serromania",
+  "version": "0.0.1",
+  "description": "website for Sisteme Electronice Romania",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florinpfm/SERROMANIA.git"
+  },
+  "author": "Florin Petrician",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/florinpfm/SERROMANIA/issues"
+  },
+  "homepage": "https://github.com/florinpfm/SERROMANIA#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "serve": "^13.0.2"
+  }
+}

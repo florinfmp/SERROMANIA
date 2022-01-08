@@ -1,0 +1,161 @@
+/* ----- In general -----*/
+main {
+  padding-top: 77px;
+  /* background-color: chocolate; */
+}
+
+
+
+
+/* ----- For Page Header -----*/
+/* ----- For Navbar -----*/
+/* ============ only desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}	
+/* ============ desktop view .end// ============ */
+
+.hovEffect {
+  position: relative;
+  
+}
+.hovEffect:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 2px;
+  left: 0;
+  background-color: rgb(13, 99, 156);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.hovEffect:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.carouselParent {
+  position: relative;
+}
+.textCarousel {
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  z-index: 500;
+  color: white;
+}
+
+@media screen and (min-width: 1401px) {
+  p.textCarouselTitle {
+      font-size: 40px;
+      text-shadow: 1px 1px 2px rgb(12, 222, 230), 0 0 10px rgb(31, 101, 231), 0 0 5px rgb(2, 2, 7);
+      font-weight: bold;
+  }
+  p.textCarouselSubtitle {
+      font-size: 25px;
+      text-shadow: 1px 1px 2px rgb(12, 222, 230), 0 0 10px rgb(31, 101, 231), 0 0 5px rgb(2, 2, 7);
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+  p.textCarouselTitle {
+      font-size: 27px;
+      text-shadow: 1px 1px 2px rgb(12, 222, 230), 0 0 10px rgb(31, 101, 231), 0 0 5px rgb(2, 2, 7);
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+  }
+  p.textCarouselSubtitle {
+      font-size: 20px;
+      text-shadow: 1px 1px 2px rgb(12, 222, 230), 0 0 10px rgb(31, 101, 231), 0 0 5px rgb(2, 2, 7);
+      margin: 0;
+      padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  p.textCarouselTitle {
+      font-size: 15px;
+      text-shadow: 1px 1px 2px rgb(12, 222, 230), 0 0 10px rgb(31, 101, 231), 0 0 5px rgb(2, 2, 7);
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+  }
+  p.textCarouselSubtitle {
+      font-size: 12px;
+      text-shadow: 1px 1px 2px rgb(12, 222, 230), 0 0 10px rgb(31, 101, 231), 0 0 5px rgb(2, 2, 7);
+      margin: 0;
+      padding: 0;
+  }
+}
+
+
+
+
+/* ----- For Page Footer -----*/
+/* .container { */
+  /* width: auto; */
+  /* max-width: 680px; */
+  /* padding: 0 15px; */
+/* } */
+
+.linkStyle {
+  text-decoration: none;
+  color: black
+}
+
+.linkStyle:hover {
+  color: #fff;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.socialMediaLink:hover {
+  color: white
+}
+
+#copywright {
+  background-color: rgb(136, 187, 221);
+}
+
+
+
+/* ----- For Home page Main Content -----*/
+/* .b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+} */
+
+@media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: .3rem; }
+}
+
+.radial-gradient {
+  background: rgb(35, 212, 153);
+  background: radial-gradient(circle, rgb(33, 161, 212) 20%, rgb(109, 96, 185) 91%);
+}
