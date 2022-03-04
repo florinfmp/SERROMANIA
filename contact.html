@@ -20,6 +20,14 @@
   <script src="https://kit.fontawesome.com/c3715467b7.js" crossorigin="anonymous"></script>
   <!--Favicon icon-->
   <link rel="shortcut icon" href="./data/favicon/favicon-32x32.png" type="image/x-icon">
+  <style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+</style>
 </head>
 <body class="d-flex flex-column h-100">
   <!--Page Header:-->
@@ -121,8 +129,83 @@
   <!--Main content:-->
   <main>
 
+    <!-- Message to display to user -->
+    <div id="messageDiv"></div>
+    
+    <!-- Map Section -->
+    <div class="map mb-4 mb-lg-0">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10748.46434596485!2d23.595904319911153!3d47.66274119610716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4737dc7fcc56835b%3A0x239cea75a203880!2sStrada%20Vasile%20Lucaciu%20155%2C%20Baia%20Mare!5e0!3m2!1sen!2sro!4v1642193518395!5m2!1sen!2sro" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
 
+        <header class="section-header">
+          <h1 class="display-4 fw-bold lh-1 mb-3 text-center">Contact</h1>
+        </header>
+
+        <!-- Address Section -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="col-md-5 info">
+                <i class="fas fa-map-marker-alt fa-2x ps-0"></i>
+                <p class="">162 Vasile Lucaciu, 430402 Baia Mare, Maramures, Romania</p>
+              </div>
+              <div class="col-md-4 info">
+                <i class="far fa-envelope fa-2x"></i>
+                <p class="" style="padding-left: 40px;">office@sistelec.ro</p>
+              </div>
+              <div class="col-md-3 info">
+                <i class="fas fa-mobile-alt fa-2x ps-0"></i>
+                <p class="">+40 262 276 107</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="row about-container">
+          <!-- Form Section-->
+          <div class="col-lg-6 content order-lg-1 order-2 border rounded-3">
+            <form id="contactForm" class="row g-0 needs-validation pt-4" novalidate>
+                <div class="form-floating position-relative mb-5">
+                    <input type="text" class="form-control" id="validationTooltip21" placeholder="..." required>
+                    <label for="validationTooltip21" class="form-label">Your Name</label>
+                    <div class="valid-tooltip">Looks good!</div>
+                    <div class="invalid-tooltip">Please provide a valid Name.</div>
+                </div>
+                <div class="form-floating position-relative mb-5">
+                    <input id="phoneContactInput" type="number" class="form-control" id="validationTooltip22" placeholder="..." min="0" required>
+                    <label for="validationTooltip22" class="form-label">Phone</label>
+                    <div class="valid-tooltip">Looks good!</div>
+                    <div class="invalid-tooltip">Please provide a valid Number.</div>
+                </div>
+                <div class="form-floating position-relative mb-5">
+                    <input type="email" class="form-control" id="validationTooltip23" placeholder="..." required>
+                    <label for="validationTooltip23" class="form-label">Email address</label>
+                    <div class="valid-tooltip">Looks good!</div>
+                    <div class="invalid-tooltip">Please provide a valid Email.</div>
+                </div>
+                <div class="form-floating position-relative mb-5">
+                    <textarea class="form-control" id="validationTooltip24" placeholder="Insert message here" required></textarea>
+                    <label for="validationTooltip24" class="form-label">Message</label>
+                    <div class="valid-tooltip">Looks good!</div>
+                    <div class="invalid-tooltip">Please write us something.</div>
+                </div>
+                <div class="d-grid gap-2 d-md-block text-center">
+                    <button id="sendMessageButton" class="btn btn-outline-info px-5 mb-3" type="submit">Send</button>
+                </div>
+            </form>
+          </div>
+
+          <div class="col-lg-6 background order-lg-2">
+            <img src="./data/images/contact/contact-img.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
 
 
 
@@ -264,8 +347,8 @@
   <!--Page Footer-->
 
   <!--Script JS-->
-  <script src="./src/scriptIndex.js" type="module"></script>
-  <script src="./src/scriptShared.js" type="module"></script>
+  <script src="./src/scriptShared.js" typeXXX="module"></script>
+  <script src="./src/scriptContact.js" typeXXX="module"></script>
   <!--Bootstrap 5 bundle script-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
